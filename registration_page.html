@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Managefy Registration</title>
+</head>
+<style>
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+.form-box{
+    background: linear-gradient(
+        #dddfe4,
+        #a3c5db
+    );
+    left: -80px;
+    top: -80px; 
+    width:470px; margin:0 auto; padding-left:50px; padding-top:20px;
+}
+body
+{
+	background: linear-gradient(
+        #5088aa,
+        #9fb0db
+    );
+	color:#555;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin:0;
+}
+.container
+{
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+
+}
+#main-header
+{
+	background-color: coral;
+	color:#fff;
+}
+#navbar
+{
+	background-color: #333;
+	coloe:#fff;
+}
+#navbar li
+{
+	display:inline;
+}
+#navbar a
+{
+	color:white;
+	text-decoration:none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+#submit{
+    background: #4b8df9; display: inline-block; padding: 5px 10px 6px; color: #fbf7f7; text-decoration: none; font-weight: bold; line-height: 1; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 1px 3px #999; -webkit-box-shadow: 0 1px 3px #999; box-shadow: 0 1px 3px #999; text-shadow: 0 -1px 1px #222; border: none; position: relative; cursor: pointer; font-size: 14px; font-family:Verdana, Geneva, sans-serif;
+}
+</style>
+<body>
+	<header id="main-header">
+		<div class="container">
+			<h1>Managefy Registration</h1>
+		</div>
+	</header>
+
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+    <div class="form-box">
+        
+		<section id="main">
+			<h2>
+                SIGN UP
+            </h2>
+        </section>
+    <form action="process.php" mehtod="POST">
+        <p>
+		<div>
+			<label>First name</label>
+			<input type="text" name="first_name" placeholder="Enter first name">
+		</div>
+        </p>
+        <p>
+		<div>
+			<label>Last name</label>
+			<input type="text" name="last_name" placeholder="Enter Last Name">
+		</div>
+        </p>
+        <p>
+		<div>
+			<label>Email</label>
+			<input type="text" name="email" placeholder=" abc@thapar.edu" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[thapar]+(?:\.[edu]+)*$/">
+		</div>
+        </p>
+        <P>
+		<div>
+			<label>Enter City</label>
+			<select name="City">
+                <option value="" disabled selected>Select Your City</option>
+                <option value="ahm">Ahmedabad</option>
+                <option value="ban">Bangalore</option>
+                <option value="che">Chennai</option>
+                <option value="de">Delhi</option>
+                <option value="far">Faridabad</option>  
+                <option value="hyd">Hyderabad</option>
+                <option value="jai">Jaipur</option>
+                <option value="luc">Lucknow</option>
+                <option value="kol">Kolkata</option>
+                <option value="mum">Mumbai</option>
+                <option value="noi">Noida</option>
+                <option value="pnp">Panipat</option>
+			</select>
+		</div>
+        </p>
+        <p>
+		<div>
+			<label>Age:</label>
+			<input type="number" name="age" placeholder="Enter Age">
+		</div>
+        </p>
+        <p>
+        <div>
+			<label>Phone Number</label>
+			<input type="number" name="phone-no" placeholder="Enter Contact Number">
+		</div>
+        </p>
+		<input type="submit" name="submit" value="submit">
+		</form>
+    </div>
+</body>
+</body>
+</html>

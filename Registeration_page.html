@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#city{
+    width: min-content;
+}
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+body{
+    background-color:rgb(82, 82, 97) ;
+    width: 50%;
+    color: bisque;
+    font-size: 16px;
+	font-weight: normal;
+	/*same as above all thee*/
+
+}
+select {
+  width: 10%;
+  height: 15px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #aa4604;
+  border: 5px black solid;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text] {
+  width: 200px;
+  height: 7px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid rgb(190, 145, 145);
+}
+
+#first-name{
+
+}
+.container{
+    width:80%;
+    margin:auto;
+    size: 80%;
+    background-position:right;
+    text-align: left;
+}
+.box-1
+{
+    width: 80%;
+	background-color:#333;
+	color:#fff;
+	padding: 20px;
+	margin-top:20px 0px;
+}
+#main-header{
+    background-color: coral;
+	color:#fff;
+    text-align: center;
+    background-position: center right;
+    float: center;
+    margin: 5px;
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+    <div>
+    <h1 id="main-header">Registeration Form</h1>
+    </div>
+    <form>
+        <div id="first-name" class="container box-1">
+        <p>
+        <label>First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter First name">
+        </p>
+        <p>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+        </p>
+        <p>
+        <label>Select City</label>
+        <select id="City" name="City">
+            <option value="" disabled selected>Select Your Option</option>
+            <option value="ahm">Ahmedabad</option>
+            <option value="ban">Bangalore</option>
+            <option value="che">Chennai</option>
+            <option value="de">Delhi</option>
+            <option value="far">Faridabad</option>  
+            <option value="hyd">Hyderabad</option>
+            <option value="jai">Jaipur</option>
+            <option value="luc">Lucknow</option>
+            <option value="kol">Kolkata</option>
+            <option value="mum">Mumbai</option>
+            <option value="noi">Noida</option>
+            <option value="pnp">Panipat</option>
+        </select>
+        </p>
+        <p>
+        <label for="email">Email Id</label>
+        <input type="text" placeholder="abc@thapar.edu" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[thapar]+(?:\.[edu]+)*$/" id="email" name="email" required>
+        </p>
+        <p>
+        <label for="phn">Mobile No.</label>
+        <input type="text" id="phn" name="phn">
+        </p>
+        <p>
+        <label for="user">Username</label>
+        <input type="text" id="user" name="user">
+        </p>
+        <p>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass">
+        </p>
+        <p>
+        <label for="con-pass">Confirm Password</label>
+        <input type="password" id="pass" name="pass">
+        </p>
+    </div>
+        
+    </form>
+    
+    <h2></h2>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit" name="Submit">
+    
+</body>
+</html>
